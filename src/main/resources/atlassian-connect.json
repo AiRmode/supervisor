@@ -1,0 +1,35 @@
+{
+  "key": "com.example.myapp",
+  "baseUrl": "https://cc88289d.ngrok.io",
+  "name": "Atlassian Connect Spring Boot Sample Atlaskit (Spring Boot)",
+  "scopes": [
+    "read", "write", "admin", "ACT_AS_USER", "DELETE"
+  ],
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed",
+    "uninstalled": "/uninstalled"
+  },
+  "modules": {
+    "generalPages": [
+      {
+        "key": "atlaskit-page-jira",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Atlaskit"
+        },
+        "url": "/atlaskit"
+      },
+      {
+        "key": "atlaskit-page-confluence",
+        "location": "system.header/left",
+        "name": {
+          "value": "Atlaskit"
+        },
+        "url": "/atlaskit"
+      }
+    ]
+  }
+}

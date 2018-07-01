@@ -1,0 +1,4 @@
+check if each user has a ticket is in 'In Progress'
+if no - escalate
+if yes - check for how long is in progress and if more the estimation - escalate
+escalate if no comments for a ticket in progress EOD
